@@ -417,7 +417,7 @@ function payWithPaystack() {
         amount: amountToPay * 100,
         currency: "NGN",
 
-        channels: ['ussd', 'card', 'bank_transfer', 'opay'],
+        channels: ['ussd', 'card', 'bank_transfer', 'bank'],
 
         metadata: {
             custom_fields: [
