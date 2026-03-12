@@ -367,8 +367,8 @@ if (storedPlan.includes("max") || storedPlan.includes("14500")) {
 displayPlan = "Euro — Max  (₦14,500)";
 amountToPay = 14500;
 } else {
-displayPlan = "Euro — Lite  (₦80)";
-amountToPay = 80;
+displayPlan = "Euro — Lite  (₦8,500)";
+amountToPay = 8500;
 }
 
 document.getElementById('selected-plan-display').textContent = displayPlan;
@@ -416,7 +416,7 @@ function payWithPaystack() {
         amount: amountToPay * 100,
         currency: "NGN",
 
-        channels: ['bank', 'bank_transfer'],
+        channels: ['bank', 'ussd', 'bank_transfer'],
 
         metadata: {
             custom_fields: [
