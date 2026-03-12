@@ -307,7 +307,7 @@ align-items: center;
     
 <script>    
 // PAYSTACK CONFIG    
-const PAYSTACK_PUBLIC_KEY = 'pk_live_4e9f36773d0ea19066a5b13ece827048ca3e3004';    
+const PAYSTACK_PUBLIC_KEY = 'pk_live_36ccd16f24cca1c60d5dfb9db503f0c3876796e2';    
 let userData = {};    
 let amountToPay = 0;    
 let displayPlan = "";    
@@ -409,7 +409,7 @@ document.getElementById('final-pay-btn').addEventListener('click', payWithPaysta
 function payWithPaystack() {
 
     var handler = PaystackPop.setup({
-        key: 'pk_live_4e9f36773d0ea19066a5b13ece827048ca3e3004',
+        key: 'pk_live_36ccd16f24cca1c60d5dfb9db503f0c3876796e2',
 
         ref: "CEL-" + Date.now(),
         email: userData.email,
@@ -446,7 +446,9 @@ function payWithPaystack() {
                             `📧 Email: ${userData.email}%0A` +
                             `💎 Plan: ${userData.plan}%0A` +
                             `💰 Amount: ₦${amountToPay}%0A` +
+                
                             `🧾 Ref: ${response.reference}%0A%0A` +
+                
                             `✅ Status: PAID VIA PAYSTACK GATEWAY`;
 
             window.location.href = `https://t.me/coachfavour01?text=${message}`;
