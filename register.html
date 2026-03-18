@@ -307,7 +307,7 @@ align-items: center;
     
 <script>    
 // PAYSTACK CONFIG    
-const PAYSTACK_PUBLIC_KEY = 'pk_live_36ccd16f24cca1c60d5dfb9db503f0c3876796e2';    
+const PAYSTACK_PUBLIC_KEY = 'pk_live_abe24a26227ab5f46c5b0eb5592e2b137b4eff08';    
 let userData = {};    
 let amountToPay = 0;    
 let displayPlan = "";    
@@ -409,7 +409,7 @@ document.getElementById('final-pay-btn').addEventListener('click', payWithPaysta
 function payWithPaystack() {
 
     var handler = PaystackPop.setup({
-        key: 'pk_live_36ccd16f24cca1c60d5dfb9db503f0c3876796e2',
+        key: 'pk_live_abe24a26227ab5f46c5b0eb5592e2b137b4eff08',
 
         ref: "CEL-" + Date.now(),
         email: userData.email,
